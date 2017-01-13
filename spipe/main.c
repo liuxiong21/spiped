@@ -112,6 +112,7 @@ main(int argc, char * argv[])
 	/* We should have processed all the arguments. */
 	if (argc != 0)
 		usage();
+	(void)argv; /* Silence clang static-analyzer warning. */
 
 	/* Set defaults. */
 	if (opt_o == 0.0)
